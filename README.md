@@ -21,6 +21,7 @@ rent-house-app/
 ├── frontend/ # Next.js frontend application
 ├── backend/ # NestJS backend REST API
 ├── docker-compose.yml # Docker configuration
+├── .hintrc # configuration file for Webhint
 └── README.md # Project documentation
 ```
 

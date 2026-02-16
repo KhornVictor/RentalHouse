@@ -1,10 +1,20 @@
 [
     {
+        "firstname": "Khorn",
+        "lastname": "Victor",
         "username": "victor",
+        "role": "Administrator",
+        "email": "khorn.victor@example.com",
+        "avatar": "https://img.freepik.com/free-photo/emotions-people-concept-headshot-serious-looking-handsome-man-with-beard-looking-confident-determined_1258-26730.jpg?semt=ais_user_personalization&w=740&q=80",
         "password": "123456"
     },
     {
+        "firstname": "Rith",
+        "lastname": "Sophanith",
         "username": "nith",
+        "role": "Customer",
+        "email": "rith.sophanith@example.com",
+        "avatar": "https://files.fairu.app/9db3de80-46c3-4340-ba41-67a785b4d31a/design-ohne-titel-15-1733319963.jpg",
         "password":"123456"
     }
 ]

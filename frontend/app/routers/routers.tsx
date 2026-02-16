@@ -1,8 +1,6 @@
 "use client";
 
-import { sign } from "crypto";
 import { usePathname } from "next/navigation";
-import path from "path";
 
 // Define all routes in a centralized object for easy management
 export const routes = {
@@ -25,13 +23,11 @@ export const routes = {
     path: "/page/home",
     name: "Dashboard",
     description: "User dashboard after login",
-  }
+  },
 } as const;
 
-// Type for route keys, ensuring we only use valid routes
 export type RouteKey = keyof typeof routes;
 
-// Custom hook to get the current active route and related info
 export const useActiveRoute = () => {
   const pathname = usePathname();
 

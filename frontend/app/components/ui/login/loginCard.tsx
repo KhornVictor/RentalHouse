@@ -5,46 +5,7 @@ import { useRouter } from "next/navigation";
 import { routes } from "@/app/routers/routers";
 import MessagesError from "../messages/MessagesError";
 import MessagesSuccess from "../messages/MessagesSuccess";
-
-const getUser = async () => {
-  try {
-    const response = await fetch("/data/users.json");
-    const users = await response.json();
-    return users;
-  } catch (error) {
-    console.error("Error fetching users:", error);
-    return [];
-  }
-};
-
-const UserExist = async (username: string): Promise<boolean> => {
-  const users = await getUser();
-  return users.some((user: { username: string }) => user.username === username);
-};
-
-const PasswordMatch = async (
-  username: string,
-  password: string,
-): Promise<boolean> => {
-  const users = await getUser();
-  const user = users.find(
-    (user: { username: string; password: string }) =>
-      user.username === username,
-  );
-  return user ? user.password === password : false;
-};
-
-const mockLogin = async (
-  username: string,
-  password: string,
-): Promise<boolean> => {
-  const users = await getUser();
-  const user = users.find(
-    (user: { username: string; password: string }) =>
-      user.username === username && user.password === password,
-  );
-  return !!user;
-};
+import { mockLogin, findUser, UserExist, PasswordMatch } from "./backend";
 
 export default function LoginCard() {
   const router = useRouter();
@@ -56,6 +17,34 @@ export default function LoginCard() {
   const [showSuccess, setShowSuccess] = useState(false);
   const [errorText, setErrorText] = useState("");
 
+  const handleSocialLogin = (provider: "google" | "microsoft") => {
+    const users = [
+        {
+            "firstname": "Sundar",
+            "lastname": "Pichai",
+            "username": "pichai",
+            "role": "admin",
+            "email": "sundar.pichai@example.com",
+            "avatar": "https://s7d1.scene7.com/is/image/wbcollab/sundar_pichai_google_ceo-1?qlt=75&resMode=sharp2",
+            "password": "123456"
+        },
+        {
+            "firstname": "Bill",
+            "lastname": "Gates",
+            "username": "gates",
+            "role": "customer",
+            "email": "bill.gates@example.com",
+            "avatar": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Bill_Gates_-_2023_-_P062021-967902_%28cropped%29.jpg",
+            "password":"123456"
+        }
+    ];
+    localStorage.setItem("authUser", JSON.stringify(users.find(u => u.username === (provider === "google" ? "pichai" : "gates"))));
+    setShowError(false);
+    setShowSuccess(true);
+    setTimeout(() => setShowSuccess(false), 5000);
+    router.push(routes.homeDashboard.path);
+  };
+
   const handleLogin = async (
     username: string,
     password: string,
@@ -65,6 +54,13 @@ export default function LoginCard() {
     const success = await mockLogin(username, password);
     if (success) {
       console.log("Login successful!");
+      const user = await findUser(username, password);
+      if (user) {
+        localStorage.setItem(
+          "authUser",
+          JSON.stringify(user),
+        );
+      }
       setShowError(false);
       setShowSuccess(true);
       setTimeout(() => setShowSuccess(false), 5000);
@@ -205,9 +201,7 @@ export default function LoginCard() {
               {/* Google Button */}
               <button
                 type="button"
-                onClick={() => {
-                  alert("Continuing with Google is not implemented in this demo.");
-                }}
+                onClick={() => handleSocialLogin("google")}
                 className="flex items-center justify-center gap-2 rounded-full border border-white/10 px-4 py-2 text-xs text-slate-200 transition hover:border-white/30 hover:bg-white/5"
               >
                 <img
@@ -221,9 +215,7 @@ export default function LoginCard() {
               {/* Microsoft Button */}
               <button
                 type="button"
-                onClick={() => {
-                  alert("Continuing with Microsoft is not implemented in this demo.");
-                }}
+                onClick={() => handleSocialLogin("microsoft")}
                 className="flex items-center justify-center gap-2 rounded-full border border-white/10 px-4 py-2 text-xs text-slate-200 transition hover:border-white/30 hover:bg-white/5"
               >
                 <img

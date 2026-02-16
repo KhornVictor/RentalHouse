@@ -1,3 +1,4 @@
+import { routes } from "@/app/routers/routers";
 import Link from "next/link";
 
 export default function Greeting() {
@@ -36,12 +37,12 @@ export default function Greeting() {
           beautiful dashboard. Built for renters, landlords, and agencies.
         </p>
         <div className="flex flex-wrap items-center gap-4">
-          <Link href="/signup">
+          <Link href={routes.signup.path}>
             <button className="rounded-full bg-linear-to-r from-cyan-400 via-purple-400 to-orange-400 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:brightness-110">
               Get Started
             </button>
           </Link>
-          <Link href="/login">
+          <Link href={routes.login.path}>
             <button className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/40 hover:bg-white/10">
               Login
             </button>

@@ -15,14 +15,21 @@ const greeting = ({ time }: any) => {
 
 type NavigationBarHomeProps = {
   user: AuthUser | null;
+  onAvatarClick?: () => void;
 };
 
-export default function NavigationBarHome({ user }: NavigationBarHomeProps) {
+export default function NavigationBarHome({
+  user,
+  onAvatarClick,
+}: NavigationBarHomeProps) {
   return (
     <div className="flex flex-wrap items-center justify-between gap-4 rounded-2xl bg-white/80 px-4 py-4 shadow-sm backdrop-blur-md dark:bg-slate-900/70">
       <div className="flex items-center gap-3">
         <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200 text-slate-600 dark:bg-slate-800 dark:text-slate-300">
-          <span className="text-sm font-semibold">
+          <span
+            onClick={onAvatarClick}
+            className="text-sm font-semibold cursor-pointer"
+          >
             <img
               src={
                 user?.avatar ||

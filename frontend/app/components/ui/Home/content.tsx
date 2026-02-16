@@ -16,11 +16,16 @@ type AuthUser = {
 type MainContentProps = {
   auth: AuthUser | null;
   selected: string;
+  onAvatarClick?: () => void;
 };
 
-export default function MainContent({ auth, selected }: MainContentProps & { selected: string }) {
+export default function MainContent({
+  auth,
+  selected,
+  onAvatarClick,
+}: MainContentProps) {
   if (selected === "Announcement") return <Announcement />;
   else if (selected === "Settings") return <Setting />;
   else if (selected === "Billing") return <Billing />;
-  else return <Dashboard user={auth} />;
+  else return <Dashboard user={auth} onAvatarClick={onAvatarClick} />;
 }

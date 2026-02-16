@@ -12,6 +12,7 @@ type AuthUser = {
 
 type DashboardProps = {
   user: AuthUser | null;
+  onAvatarClick?: () => void;
 };
 
 const statCards = [
@@ -88,10 +89,10 @@ const attendanceRows = [
   },
 ];
 
-export default function Dashboard({ user }: DashboardProps) {
+export default function Dashboard({ user, onAvatarClick }: DashboardProps) {
   return (
     <main className="flex-1 px-6 py-6 lg:px-10">
-      <NavigationBarHome user={user} />
+      <NavigationBarHome user={user} onAvatarClick={onAvatarClick} />
 
       <section className="mt-6 grid gap-4 lg:grid-cols-4">
         {statCards.map((card) => (

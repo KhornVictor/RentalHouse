@@ -3,22 +3,14 @@
 import { useEffect, useState } from "react";
 import MainContent from "./content";
 import SideBar from "./sideBar";
-
-type AuthUser = {
-  firstname: string;
-  lastname: string;
-  username: string;
-  role: string;
-  email: string;
-  avatar: string;
-};
+import User from "@/app/types/user";
 
 type MainHomeProps = {
-  user?: AuthUser | null;
+  user?: User | null;
 };
 
 export default function MainHome({ user }: MainHomeProps) {
-  const [authUser, setAuthUser] = useState<AuthUser | null>(user ?? null);
+  const [authUser, setAuthUser] = useState<User | null>(user ?? null);
   const [selected, setSelected] = useState<string>("Dashboard");
   const [avatarDisplay, setAvatarDisplay] = useState<boolean>(false);
 
@@ -29,11 +21,8 @@ export default function MainHome({ user }: MainHomeProps) {
   useEffect(() => {
     const stored = localStorage.getItem("authUser");
     if (stored) {
-      try {
-        setAuthUser(JSON.parse(stored));
-      } catch {
-        setAuthUser(null);
-      }
+      try { setAuthUser(JSON.parse(stored)); } 
+      catch { setAuthUser(null); }
     }
   }, []);
 
@@ -47,7 +36,7 @@ export default function MainHome({ user }: MainHomeProps) {
             onSelect={(selected) => setSelected(selected)}
           />
         </div>
-        <div className="ml-64 flex-1 p-1 overflow-y-scroll scrollbar-slate">
+        <div className="w-full h-screen ml-64 flex-1 p-1 bg-linear-to-br from-slate-600 via-slate-700 to-slate-800 overflow-hidden">
           <MainContent
             auth={authUser}
             selected={selected}

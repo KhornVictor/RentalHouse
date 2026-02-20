@@ -1,11 +1,5 @@
-type AuthUser = {
-  firstname: string;
-  lastname: string;
-  username: string;
-  role: string;
-  email: string;
-  avatar: string;
-};
+import User from "@/app/types/user";
+
 
 const greeting = ({ time }: any) => {
   if (time < 12) return "Morning";
@@ -14,7 +8,7 @@ const greeting = ({ time }: any) => {
 };
 
 type NavigationBarHomeProps = {
-  user: AuthUser | null;
+  user: User | null;
   onAvatarClick?: () => void;
 };
 
@@ -23,7 +17,7 @@ export default function NavigationBarHome({
   onAvatarClick,
 }: NavigationBarHomeProps) {
   return (
-    <div className="flex flex-wrap items-center justify-between gap-4 rounded-2xl bg-white/80 px-4 py-4 shadow-sm backdrop-blur-md dark:bg-slate-900/70">
+    <div className="flex flex-wrap items-center justify-between gap-4 rounded-2xl bg-white/80 px-4 py-4 shadow-lg backdrop-blur-md dark:bg-slate-900/70 shadow-slate-800/90">
       <div className="flex items-center gap-3">
         <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200 text-slate-600 dark:bg-slate-800 dark:text-slate-300">
           <span

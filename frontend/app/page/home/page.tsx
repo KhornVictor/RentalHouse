@@ -1,4 +1,5 @@
-import MainHome from "../../components/ui/Home/mainHome";
+import User from "@/app/types/user";
+import MainHome from "../../components/ui/admin/mainHome";
 
 export default function Home() {
   return (

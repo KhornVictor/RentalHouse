@@ -1,29 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { FaMoneyBills } from "react-icons/fa6";
-import { GiBugleCall } from "react-icons/gi";
-import { IoMdSettings } from "react-icons/io";
-import { MdDashboard } from "react-icons/md";
-
-const listItems = [
-  {
-    name: "Dashboard",
-    icon: <MdDashboard />
-  },
-  {
-    name: "Announcement",
-    icon: <GiBugleCall />
-  },
-  {
-    name: "Billing",
-    icon: <FaMoneyBills />
-  },
-  {
-    name: "Settings",
-    icon: <IoMdSettings />
-  }
-];
+import { listItems } from "./router";
 
 export default function SideBar(
   { user, selected, onSelect }: { user: any, selected: string, onSelect: (selected: string) => void }

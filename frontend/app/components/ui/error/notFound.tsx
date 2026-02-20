@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function NotFound({backButtonVisible = true, text}: {backButtonVisible?: boolean, text?: string}) {
+export default function NotFound({backButtonVisible = false, text}: {backButtonVisible?: boolean, text?: string}) {
   return (
     <div className="w-full h-screen flex flex-col bg-white items-center justify-center">
       {backButtonVisible && (

@@ -1,0 +1,82 @@
+[
+  {
+    "leaseid": 1,
+    "roomid": 1,
+    "tenantid": 1,
+    "moveindate": "2025-01-01",
+    "moveoutdate": null,
+    "depositamount": 240
+  },
+  {
+    "leaseid": 2,
+    "roomid": 2,
+    "tenantid": 2,
+    "moveindate": "2025-02-01",
+    "moveoutdate": null,
+    "depositamount": 300
+  },
+  {
+    "leaseid": 3,
+    "roomid": 3,
+    "tenantid": 3,
+    "moveindate": "2025-03-01",
+    "moveoutdate": "2025-10-31",
+    "depositamount": 260
+  },
+  {
+    "leaseid": 4,
+    "roomid": 4,
+    "tenantid": 4,
+    "moveindate": "2025-04-01",
+    "moveoutdate": "2025-09-30",
+    "depositamount": 200
+  },
+  {
+    "leaseid": 5,
+    "roomid": 5,
+    "tenantid": 5,
+    "moveindate": "2025-05-01",
+    "moveoutdate": "2025-08-31",
+    "depositamount": 400
+  },
+  {
+    "leaseid": 6,
+    "roomid": 6,
+    "tenantid": 6,
+    "moveindate": "2025-06-01",
+    "moveoutdate": null,
+    "depositamount": 280
+  },
+  {
+    "leaseid": 7,
+    "roomid": 7,
+    "tenantid": 7,
+    "moveindate": "2025-07-01",
+    "moveoutdate": "2026-06-30",
+    "depositamount": 320
+  },
+  {
+    "leaseid": 8,
+    "roomid": 8,
+    "tenantid": 8,
+    "moveindate": "2025-08-01",
+    "moveoutdate": "2026-05-31",
+    "depositamount": 250
+  },
+  {
+    "leaseid": 9,
+    "roomid": 9,
+    "tenantid": 9,
+    "moveindate": "2025-09-01",
+    "moveoutdate": "2026-04-30",
+    "depositamount": 180
+  },
+  {
+    "leaseid": 10,
+    "roomid": 10,
+    "tenantid": 10,
+    "moveindate": "2025-10-01",
+    "moveoutdate": "2026-03-31",
+    "depositamount": 270
+  }
+]

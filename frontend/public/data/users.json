@@ -1,20 +1,146 @@
 [
-    {
-        "firstname": "Khorn",
-        "lastname": "Victor",
-        "username": "victor",
-        "role": "Administrator",
-        "email": "khorn.victor@example.com",
-        "avatar": "https://img.freepik.com/free-photo/emotions-people-concept-headshot-serious-looking-handsome-man-with-beard-looking-confident-determined_1258-26730.jpg?semt=ais_user_personalization&w=740&q=80",
-        "password": "123456"
-    },
-    {
-        "firstname": "Rith",
-        "lastname": "Sophanith",
-        "username": "nith",
-        "role": "Customer",
-        "email": "rith.sophanith@example.com",
-        "avatar": "https://files.fairu.app/9db3de80-46c3-4340-ba41-67a785b4d31a/design-ohne-titel-15-1733319963.jpg",
-        "password":"123456"
-    }
+  {
+    "userid": 1,
+    "firstname": "Sok",
+    "lastname": "Dara",
+    "username": "sokdara",
+    "password": "secure123",
+    "role": "tenant",
+    "phonenumber": "012345678",
+    "avatar": "https://www.mekongculturalhub.org/wp-content/uploads/2020/07/Dara-HUOT-Cambodia-opt.jpg",
+    "email": "sok.dara@example.com",
+    "status": "active"
+  },
+  {
+    "userid": 2,
+    "firstname": "Chan",
+    "lastname": "Rithy",
+    "username": "chanrithy",
+    "password": "secure456",
+    "role": "tenant",
+    "phonenumber": "098765432",
+    "avatar": "https://images.squarespace-cdn.com/content/v1/582a4ade440243c12b2ac30b/3e0f58d6-3ff5-41e9-8d24-4ed0dba25aac/9547361_wyo8fkiQLQJrBvuoTmG1yd6Q.jpg",
+    "email": "chan@example.com",
+    "status": "active"
+  },
+  {
+    "userid": 3,
+    "firstname": "Vanna",
+    "lastname": "Kim",
+    "username": "vannakim",
+    "password": "secure789",
+    "role": "tenant",
+    "phonenumber": "011223344",
+    "avatar": "https://hips.hearstapps.com/hmg-prod/images/how-long-has-vanna-white-been-on-wheel-of-fortune-66db404886994.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=980:*g",
+    "email": "vanna@example.com",
+    "status": "inactive"
+  },
+  {
+    "userid": 4,
+    "firstname": "Mony",
+    "lastname": "Sok",
+    "username": "monysok",
+    "password": "secure101",
+    "role": "tenant",
+    "phonenumber": "010112233",
+    "avatar": "https://img.freepik.com/free-photo/enthusiastic-modern-woman-winning-money-got-cash-celebrating-shouting-joy-standing-against-be_1258-87327.jpg?semt=ais_user_personalization&w=740&q=80",
+    "email": "mony@example.com",
+    "status": "active"
+  },
+  {
+    "userid": 5,
+    "firstname": "Nita",
+    "lastname": "Ly",
+    "username": "nitaly",
+    "password": "secure202",
+    "role": "tenant",
+    "phonenumber": "015556677",
+    "avatar": "https://media.istockphoto.com/id/1299077558/photo/lead-yourself-to-a-life-of-success.jpg?s=612x612&w=0&k=20&c=OQZPSnM1Eq-4Xx8bxJE8KQ5olJFfRw_YMc29aQ0Au6U=",
+    "email": "nita@example.com",
+    "status": "active"
+  },
+  {
+    "userid": 6,
+    "firstname": "Rina",
+    "lastname": "Meas",
+    "username": "rinameas",
+    "password": "secure303",
+    "role": "tenant",
+    "phonenumber": "016778899",
+    "avatar": "https://images.pexels.com/photos/14650234/pexels-photo-14650234.jpeg",
+    "email": "rina@example.com",
+    "status": "active"
+  },
+  {
+    "userid": 7,
+    "firstname": "Kosal",
+    "lastname": "Chea",
+    "username": "kosalchea",
+    "password": "secure404",
+    "role": "tenant",
+    "phonenumber": "017998877",
+    "avatar": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_user_personalization&w=740&q=80",
+    "email": "kosal@example.com",
+    "status": "inactive"
+  },
+  {
+    "userid": 8,
+    "firstname": "Srey",
+    "lastname": "Pich",
+    "username": "sreypich",
+    "password": "secure505",
+    "role": "tenant",
+    "phonenumber": "018334455",
+    "avatar": "https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg",
+    "email": "srey@example.com",
+    "status": "active"
+  },
+  {
+    "userid": 9,
+    "firstname": "Bora",
+    "lastname": "Heng",
+    "username": "boraheng",
+    "password": "secure606",
+    "role": "tenant",
+    "phonenumber": "019223344",
+    "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
+    "email": "bora@example.com",
+    "status": "active"
+  },
+  {
+    "userid": 10,
+    "firstname": "Davy",
+    "lastname": "Lim",
+    "username": "davylim",
+    "password": "secure707",
+    "role": "tenant",
+    "phonenumber": "077665544",
+    "avatar": "https://www.shutterstock.com/image-photo/young-asian-woman-professional-entrepreneur-600nw-2127014192.jpg",
+    "email": "davy@example.com",
+    "status": "active"
+  },
+  {
+    "userid": 11,
+    "firstname": "Khorn",
+    "lastname": "Victor",
+    "username": "victor",
+    "password": "123456",
+    "role": "admin",
+    "phonenumber": "077665544",
+    "email": "khorn.victor@example.com",
+    "avatar": "https://img.freepik.com/free-photo/emotions-people-concept-headshot-serious-looking-handsome-man-with-beard-looking-confident-determined_1258-26730.jpg?semt=ais_user_personalization&w=740&q=80",
+    "status": "active"
+  },
+  {
+    "userid": 12,
+    "firstname": "Rith",
+    "lastname": "Sophanith",
+    "username": "nith",
+    "role": "admin",
+    "email": "rith.sophanith@example.com",
+    "phonenumber": "012345678",
+    "avatar": "https://files.fairu.app/9db3de80-46c3-4340-ba41-67a785b4d31a/design-ohne-titel-15-1733319963.jpg",
+    "password": "123456",
+    "status": "active"
+  }
 ]

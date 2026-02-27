@@ -144,3 +144,118 @@ Table Bill {
 }
 
 ``` 
+
+# 🚀 NestJS Backend Project
+
+A scalable and maintainable backend API built using **NestJS** and
+**TypeScript**.
+
+------------------------------------------------------------------------
+
+## 📦 Tech Stack
+
+-   NestJS
+-   TypeScript
+-   Node.js
+-   Prisma
+-   PostgreSQL
+-   JWT Authentication
+-   Class Validator
+
+------------------------------------------------------------------------
+
+## 📂 Project Structure
+
+    src/
+    │
+    ├── main.ts
+    ├── app.module.ts
+    │
+    ├── common/                # Shared utilities (guards, pipes, filters, etc.)
+    │   ├── decorators/
+    │   ├── guards/
+    │   ├── interceptors/
+    │   ├── filters/
+    │   ├── pipes/
+    │   └── utils/
+    │
+    ├── config/                # App configuration
+    │   ├── configuration.ts
+    │   └── validation.ts
+    │
+    ├── database/              # Database setup
+    │   ├── prisma/
+    │   └── database.module.ts
+    │
+    └── modules/               # Feature-based modules
+        ├── users/
+        ├── auth/
+        └── posts/
+
+------------------------------------------------------------------------
+
+## ⚙️ Installation
+
+``` bash
+git clone https://github.com/your-username/your-project.git
+cd your-project
+npm install
+```
+
+------------------------------------------------------------------------
+
+## 🔧 Environment Setup
+
+Create a `.env` file:
+
+    DATABASE_URL=your_database_url
+    JWT_SECRET=your_secret_key
+    PORT=3000
+
+------------------------------------------------------------------------
+
+## ▶️ Running the Application
+
+Development:
+
+    npm run start:dev
+
+Production:
+
+    npm run build
+    npm run start:prod
+
+Server runs on: http://localhost:3000
+
+------------------------------------------------------------------------
+
+## 🧪 Running Tests
+
+    npm run test
+    npm run test:e2e
+    npm run test:cov
+
+------------------------------------------------------------------------
+
+## 🔐 Authentication
+
+-   JWT-based authentication
+-   Protected routes use JwtAuthGuard
+-   Access token returned after login
+
+------------------------------------------------------------------------
+
+## 📈 Future Improvements
+
+-   Role-based authorization
+-   Refresh tokens
+-   Swagger documentation
+-   Docker support
+-   CI/CD integration
+
+------------------------------------------------------------------------
+
+## 👨‍💻 Author
+
+Your Name\
+Backend Developer

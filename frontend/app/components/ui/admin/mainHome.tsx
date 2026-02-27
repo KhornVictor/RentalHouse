@@ -44,7 +44,7 @@ export default function MainHome({ user }: MainHomeProps) {
           />
         </div>
       </div>
-      <div
+      <div  
         onClick={() => {
           setAvatarDisplay(false);
         }}

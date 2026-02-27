@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import User from "@/app/types/user";
 import NavigationBarHome from "../navigationBarHome";
 import ThemeToggle from "../../ThemeToggle";
@@ -11,20 +11,7 @@ type SettingProps = {
 };
 
 export default function Setting({ user, onAvatarClick }: SettingProps) {
-  const authUser = useMemo(() => {
-    if (user) return user;
-
-    if (typeof window === "undefined") return null;
-
-    const stored = localStorage.getItem("authUser");
-    if (!stored) return null;
-
-    try {
-      return JSON.parse(stored) as User;
-    } catch {
-      return null;
-    }
-  }, [user]);
+  const [authUser, setAuthUser] = useState<User | null>(user ?? null);
 
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
@@ -43,6 +30,21 @@ export default function Setting({ user, onAvatarClick }: SettingProps) {
   const [savingProfile, setSavingProfile] = useState(false);
   const [savingSecurity, setSavingSecurity] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
+
+  useEffect(() => {
+    setAuthUser(user ?? null);
+  }, [user]);
+
+  useEffect(() => {
+    const stored = localStorage.getItem("authUser");
+    if (!stored) return;
+
+    try {
+      setAuthUser(JSON.parse(stored) as User);
+    } catch {
+      setAuthUser(null);
+    }
+  }, []);
 
   useEffect(() => {
     if (!authUser) return;

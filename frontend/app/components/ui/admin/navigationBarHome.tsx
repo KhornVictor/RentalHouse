@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import User from "@/app/types/user";
 
 
@@ -16,6 +19,12 @@ export default function NavigationBarHome({
   user,
   onAvatarClick,
 }: NavigationBarHomeProps) {
+  const [greetingText, setGreetingText] = useState("Welcome");
+
+  useEffect(() => {
+    setGreetingText(greeting({ time: new Date().getHours() }));
+  }, []);
+
   return (
     <div className="flex flex-wrap items-center justify-between gap-4 rounded-2xl bg-white/80 px-4 py-4 shadow-lg backdrop-blur-md dark:bg-slate-900/70 shadow-slate-800/90">
       <div className="flex items-center gap-3">
@@ -37,7 +46,7 @@ export default function NavigationBarHome({
         <div>
           <p className="text-sm font-medium">
             {user?.username?.toUpperCase() || "GUEST"},{" "}
-            {greeting({ time: new Date().getHours() })}
+            {greetingText}
           </p>
           <p className="text-xs text-slate-500 dark:text-slate-400">
             {user?.role || "Guest"}

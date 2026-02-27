@@ -49,6 +49,79 @@ rent-house-app/
 
 ---
 
+```yml
+services:
+  database:
+    image: postgres:18
+    container_name: my-postgres
+    restart: always
+    env_file:
+      - .env
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - postgres_data:/var/lib/postgresql
+    networks:
+      - backend
+
+  api:
+    build: ./backend
+    command: npm run start:dev
+    container_name: my-api
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "${PORT}:3000"
+    depends_on:
+      - database
+    networks:
+      - backend
+    volumes:
+      - ./backend/src:/app/src
+      - ./backend/package.json:/app/package.json
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: my-pgadmin
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+      PYTHONWARNINGS: ignore::SyntaxWarning
+    ports:
+      - "${PGADMIN_PORT}:80"
+    depends_on:
+      - database
+    networks:
+      - backend
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: dockerFile
+    container_name: my-frontend
+    restart: always
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: development
+    ports:
+      - "${FRONTEND_PORT}:3000"
+    depends_on:
+      - api
+    networks:
+      - backend
+
+volumes:
+  postgres_data:
+
+networks:
+  backend:
+```
+
 # ⚙️ Getting Started
 
 ## 1️⃣ Clone Repository

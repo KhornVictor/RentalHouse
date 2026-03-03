@@ -100,7 +100,6 @@ Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 ## DBML
 
 ```dbml
-
 Table Room {
   roomid int [pk]
   roomnumber varchar
@@ -124,8 +123,8 @@ Table User {
 
 Table Lease {
   leaseid int [pk]
-  roomid int [ref: > Room.room_id]
-  tenantid int [ref: > Tenant.tenant_id]
+  roomid int [ref: > Room.roomid]
+  tenantid int [ref: > User.userid]
   moveindate date
   moveoutdate date
   rentamount decimal
@@ -134,7 +133,7 @@ Table Lease {
 
 Table Bill {
   billid int [pk]
-  leaseid int [ref: > Lease.lease_id]
+  leaseid int [ref: > Lease.leaseid]
   billingmonth date
   electricityunits decimal
   electricityrate decimal

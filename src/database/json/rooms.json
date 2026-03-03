@@ -1,0 +1,74 @@
+[
+  {
+    "roomid": 1,
+    "roomnumber": "A101",
+    "capacity": 2,
+    "status": "occupied",
+    "rentamount": 150,
+    "electricityrate": 0.25,
+    "waterrate": 0.15
+  },
+  {
+    "roomid": 2,
+    "roomnumber": "A102",
+    "capacity": 3,
+    "rentamount": 200,
+    "status": "vacant"
+  },
+  {
+    "roomid": 3,
+    "roomnumber": "B201",
+    "capacity": 2,
+    "rentamount": 180,
+    "status": "occupied"
+  },
+  {
+    "roomid": 4,
+    "roomnumber": "B202",
+    "capacity": 1,
+    "rentamount": 100,
+    "status": "occupied"
+  },
+  {
+    "roomid": 5,
+    "roomnumber": "C301",
+    "capacity": 4,
+    "rentamount": 250,
+    "status": "vacant"
+  },
+  {
+    "roomid": 6,
+    "roomnumber": "C302",
+    "capacity": 2,
+    "rentamount": 160,
+    "status": "occupied"
+  },
+  {
+    "roomid": 7,
+    "roomnumber": "D401",
+    "capacity": 3,
+    "rentamount": 220,
+    "status": "occupied"
+  },
+  {
+    "roomid": 8,
+    "roomnumber": "D402",
+    "capacity": 2,
+    "rentamount": 140,
+    "status": "vacant"
+  },
+  {
+    "roomid": 9,
+    "roomnumber": "E501",
+    "capacity": 1,
+    "rentamount": 120,
+    "status": "occupied"
+  },
+  {
+    "roomid": 10,
+    "roomnumber": "E502",
+    "capacity": 2,
+    "rentamount": 130,
+    "status": "vacant"
+  }
+]

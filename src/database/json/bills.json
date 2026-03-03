@@ -1,0 +1,302 @@
+[
+  {
+    "billid": 1,
+    "leaseid": 1,
+    "billingmonth": "2025-05-01",
+    "electricityunits": 47,
+    "electricityrate": 0.25,
+    "waterunits": 11,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 2,
+    "leaseid": 2,
+    "billingmonth": "2025-05-01",
+    "electricityunits": 63,
+    "electricityrate": 0.25,
+    "waterunits": 13,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 3,
+    "leaseid": 3,
+    "billingmonth": "2025-05-01",
+    "electricityunits": 39,
+    "electricityrate": 0.25,
+    "waterunits": 8,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 4,
+    "leaseid": 4,
+    "billingmonth": "2025-05-01",
+    "electricityunits": 74,
+    "electricityrate": 0.25,
+    "waterunits": 14,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 5,
+    "leaseid": 5,
+    "billingmonth": "2025-05-01",
+    "electricityunits": 52,
+    "electricityrate": 0.25,
+    "waterunits": 10,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 6,
+    "leaseid": 6,
+    "billingmonth": "2025-05-01",
+    "electricityunits": 68,
+    "electricityrate": 0.25,
+    "waterunits": 15,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 7,
+    "leaseid": 7,
+    "billingmonth": "2025-05-01",
+    "electricityunits": 35,
+    "electricityrate": 0.25,
+    "waterunits": 7,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 8,
+    "leaseid": 8,
+    "billingmonth": "2025-05-01",
+    "electricityunits": 79,
+    "electricityrate": 0.25,
+    "waterunits": 16,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 9,
+    "leaseid": 9,
+    "billingmonth": "2025-05-01",
+    "electricityunits": 28,
+    "electricityrate": 0.25,
+    "waterunits": 5,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 10,
+    "leaseid": 10,
+    "billingmonth": "2025-05-01",
+    "electricityunits": 83,
+    "electricityrate": 0.25,
+    "waterunits": 17,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 11,
+    "leaseid": 1,
+    "billingmonth": "2026-01-01",
+    "electricityunits": 54,
+    "electricityrate": 0.25,
+    "waterunits": 12,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 12,
+    "leaseid": 2,
+    "billingmonth": "2026-01-01",
+    "electricityunits": 58,
+    "electricityrate": 0.25,
+    "waterunits": 11,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 13,
+    "leaseid": 3,
+    "billingmonth": "2026-01-01",
+    "electricityunits": 49,
+    "electricityrate": 0.25,
+    "waterunits": 10,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 14,
+    "leaseid": 4,
+    "billingmonth": "2026-01-01",
+    "electricityunits": 67,
+    "electricityrate": 0.25,
+    "waterunits": 13,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 15,
+    "leaseid": 5,
+    "billingmonth": "2026-01-01",
+    "electricityunits": 61,
+    "electricityrate": 0.25,
+    "waterunits": 12,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 16,
+    "leaseid": 6,
+    "billingmonth": "2026-01-01",
+    "electricityunits": 62,
+    "electricityrate": 0.25,
+    "waterunits": 14,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 17,
+    "leaseid": 7,
+    "billingmonth": "2026-01-01",
+    "electricityunits": 44,
+    "electricityrate": 0.25,
+    "waterunits": 9,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 18,
+    "leaseid": 8,
+    "billingmonth": "2026-01-01",
+    "electricityunits": 72,
+    "electricityrate": 0.25,
+    "waterunits": 15,
+    "waterrate": 0.15,
+    "paymentstatus": "unpaid"
+  },
+  {
+    "billid": 19,
+    "leaseid": 9,
+    "billingmonth": "2026-01-01",
+    "electricityunits": 33,
+    "electricityrate": 0.25,
+    "waterunits": 7,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 20,
+    "leaseid": 10,
+    "billingmonth": "2026-01-01",
+    "electricityunits": 77,
+    "electricityrate": 0.25,
+    "waterunits": 18,
+    "waterrate": 0.15,
+    "paymentstatus": "unpaid"
+  },
+  {
+    "billid": 21,
+    "leaseid": 1,
+    "billingmonth": "2026-02-01",
+    "electricityunits": 57,
+    "electricityrate": 0.25,
+    "waterunits": 11,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 22,
+    "leaseid": 2,
+    "billingmonth": "2026-02-01",
+    "electricityunits": 64,
+    "electricityrate": 0.25,
+    "waterunits": 13,
+    "waterrate": 0.15,
+    "paymentstatus": "unpaid"
+  },
+  {
+    "billid": 23,
+    "leaseid": 3,
+    "billingmonth": "2026-02-01",
+    "electricityunits": 42,
+    "electricityrate": 0.25,
+    "waterunits": 10,
+    "waterrate": 0.15,
+    "paymentstatus": "unpaid"
+  },
+  {
+    "billid": 24,
+    "leaseid": 4,
+    "billingmonth": "2026-02-01",
+    "electricityunits": 73,
+    "electricityrate": 0.25,
+    "waterunits": 14,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 25,
+    "leaseid": 5,
+    "billingmonth": "2026-02-01",
+    "electricityunits": 59,
+    "electricityrate": 0.25,
+    "waterunits": 12,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 26,
+    "leaseid": 6,
+    "billingmonth": "2026-02-01",
+    "electricityunits": 66,
+    "electricityrate": 0.25,
+    "waterunits": 15,
+    "waterrate": 0.15,
+    "paymentstatus": "unpaid"
+  },
+  {
+    "billid": 27,
+    "leaseid": 7,
+    "billingmonth": "2026-02-01",
+    "electricityunits": 38,
+    "electricityrate": 0.25,
+    "waterunits": 9,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 28,
+    "leaseid": 8,
+    "billingmonth": "2026-02-01",
+    "electricityunits": 78,
+    "electricityrate": 0.25,
+    "waterunits": 16,
+    "waterrate": 0.15,
+    "paymentstatus": "unpaid"
+  },
+  {
+    "billid": 29,
+    "leaseid": 9,
+    "billingmonth": "2026-02-01",
+    "electricityunits": 34,
+    "electricityrate": 0.25,
+    "waterunits": 7,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  },
+  {
+    "billid": 30,
+    "leaseid": 10,
+    "billingmonth": "2026-02-01",
+    "electricityunits": 82,
+    "electricityrate": 0.25,
+    "waterunits": 17,
+    "waterrate": 0.15,
+    "paymentstatus": "paid"
+  }
+]
